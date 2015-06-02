@@ -1,0 +1,6 @@
+<form name="todoFrm" ng-submit="addTodo()">
+  <input type="text" name="newTask" ng-model="newTask" required>
+  <input type="submit" ng-disabled="todoFrm.$invalid" value="+ Add">
+</form>
+<!--Clear done todos-->
+<input type="button" ng-click="clearDone()" value="Clear done tasks">
